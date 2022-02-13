@@ -17,11 +17,11 @@ int main (void) {
 		.a = 1,
 		.b = 2
 	};
-	printf("Before switch : a= %d, b= %d\r\n", duo.a, duo.b);
-	if (0 == fakeAPI(&(duo.a), &(duo.b)))
-        	printf("After switch : a= %d, b= %d\r\n",
+	printf ("Before switch : a= %d, b= %d\r\n", duo.a, duo.b);
+	if (0 == switchDataAPI (&(duo.a), &(duo.b)))
+		printf ("After switch : a= %d, b= %d\r\n",
 			duo.a, duo.b);
 	else
-		printf("Error on fakeAPI function\r\n");
+		printf ("Error on fakeAPI function\r\n");
 	return 0;
 }

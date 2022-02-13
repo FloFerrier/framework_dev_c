@@ -6,7 +6,7 @@
  * return 0 if SUCCESS
  * return -1 if FAIL
  */
-int fakeAPI (int *ptrA, int *ptrB) {
+int switchDataAPI (int *ptrA, int *ptrB) {
 	int ret = -1;
 	if ((NULL != ptrA) && (NULL != ptrB)) {
 		int _tmp = *ptrA;
