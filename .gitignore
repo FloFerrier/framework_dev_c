@@ -1,3 +1,6 @@
+# Ingone Vscode files
+.vscode/
+
 # Ignore Unity folder
 unity/*
 
