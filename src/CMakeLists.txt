@@ -1,10 +1,8 @@
 set(SOURCE_FILES
-	./main.c
-	./lib_app.c
-	./lib_app.h)
+	./main.c)
 
-set(BINARY_DIR ${CMAKE_BINARY_DIR})
+add_executable(release ${SOURCE_FILES})
 
-add_executable(release_run ${SOURCE_FILES})
+target_link_libraries(release PUBLIC lib_app)
 
-add_library(app_lib STATIC ${SOURCE_FILES})
+set_target_properties(release PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
